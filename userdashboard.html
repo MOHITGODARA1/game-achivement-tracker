@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - GameTrackAI</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="userdashboard.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">GameTrack<span>AI</span></h1>
+        <button class="theme-toggle">🌙</button>
+    </header>
+
+    <main class="dashboard">
+        <section class="profile-section">
+            <div class="profile-card">
+                <div class="profile-header">
+                    <div class="avatar">👤</div>
+                    <div class="profile-info">
+                        <h2 id="username">BGMI Player</h2>
+                        <p class="rank" id="userRank">Bronze</p>
+                    </div>
+                </div>
+                <div class="profile-stats">
+                    <div class="stat-item">
+                        <span class="stat-value" id="totalKills">0</span>
+                        <span class="stat-label">Total Kills</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" id="totalWins">0</span>
+                        <span class="stat-label">Total Wins</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" id="headshotRate">0%</span>
+                        <span class="stat-label">Headshot Rate</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="achievements-section">
+            <h2 class="section-title">Your Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-badge">
+                    <div class="badge-icon">🎯</div>
+                    <h3>First Blood</h3>
+                    <p>Get your first kill</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="firstBloodProgress"></div>
+                    </div>
+                </div>
+                <div class="achievement-badge">
+                    <div class="badge-icon">🏆</div>
+                    <h3>Champion</h3>
+                    <p>Win your first match</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="championProgress"></div>
+                    </div>
+                </div>
+                <div class="achievement-badge">
+                    <div class="badge-icon">🎖️</div>
+                    <h3>Sharpshooter</h3>
+                    <p>Get 100 headshots</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="sharpshooterProgress"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <h2 class="section-title">Detailed Statistics</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Combat Stats</h3>
+                    <div class="stat-detail">
+                        <span>K/D Ratio</span>
+                        <span id="kdRatio">0.00</span>
+                    </div>
+                    <div class="stat-detail">
+                        <span>Damage Dealt</span>
+                        <span id="damageDealt">0</span>
+                    </div>
+                    <div class="stat-detail">
+                        <span>Survival Time</span>
+                        <span id="survivalTime">0h 0m</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <h3>Match Stats</h3>
+                    <div class="stat-detail">
+                        <span>Matches Played</span>
+                        <span id="matchesPlayed">0</span>
+                    </div>
+                    <div class="stat-detail">
+                        <span>Win Rate</span>
+                        <span id="winRate">0%</span>
+                    </div>
+                    <div class="stat-detail">
+                        <span>Top 10 Rate</span>
+                        <span id="top10Rate">0%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recent-matches">
+            <h2 class="section-title">Recent Matches</h2>
+            <div class="matches-list" id="matchesList">
+                <!-- Matches will be added here dynamically -->
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How do I track my achievements?</h3>
+                    <p>Simply enter your BGMI ID and we'll automatically track your achievements and stats.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What stats are tracked?</h3>
+                    <p>We track kills, wins, headshots, rank, matches played, and various other statistics.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How often are stats updated?</h3>
+                    <p>Stats are updated every 30 seconds to show your latest performance.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I compare my stats with friends?</h3>
+                    <p>Yes! You can compare your stats with friends who have also linked their BGMI IDs.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="userdashboard.js"></script>
+</body>
+</html> 

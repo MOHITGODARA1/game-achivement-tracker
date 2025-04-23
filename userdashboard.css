@@ -1,0 +1,233 @@
+/* Dashboard Layout */
+.dashboard {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    color: #a970ff;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 10px rgba(169, 112, 255, 0.5);
+    animation: textGlow 2s infinite;
+}
+
+/* Profile Section */
+.profile-card {
+    background: rgba(26, 26, 26, 0.8);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(169, 112, 255, 0.3);
+    box-shadow: 0 0 20px rgba(169, 112, 255, 0.2);
+    animation: neonPulse 2s infinite;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.avatar {
+    font-size: 3rem;
+    margin-right: 1.5rem;
+    background: rgba(169, 112, 255, 0.1);
+    padding: 1rem;
+    border-radius: 50%;
+    border: 2px solid #a970ff;
+    box-shadow: 0 0 15px rgba(169, 112, 255, 0.3);
+}
+
+.profile-info h2 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.rank {
+    color: #a970ff;
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0;
+    text-shadow: 0 0 10px rgba(169, 112, 255, 0.5);
+}
+
+/* Achievements Section */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.achievement-badge {
+    background: rgba(26, 26, 26, 0.8);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    border: 1px solid rgba(169, 112, 255, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.achievement-badge:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(169, 112, 255, 0.3);
+}
+
+.badge-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(169, 112, 255, 0.5);
+}
+
+.achievement-badge h3 {
+    color: #a970ff;
+    margin: 0.5rem 0;
+}
+
+.achievement-badge p {
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+/* Stats Section */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: rgba(26, 26, 26, 0.8);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    border: 1px solid rgba(169, 112, 255, 0.3);
+}
+
+.stat-card h3 {
+    color: #a970ff;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(169, 112, 255, 0.5);
+}
+
+.stat-detail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+/* Recent Matches */
+.matches-list {
+    background: rgba(26, 26, 26, 0.8);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    border: 1px solid rgba(169, 112, 255, 0.3);
+}
+
+.match-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(169, 112, 255, 0.1);
+}
+
+.match-item:last-child {
+    border-bottom: none;
+}
+
+.match-result {
+    color: #a970ff;
+    font-weight: bold;
+}
+
+/* Progress Bars */
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    margin-top: 1rem;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #a970ff, #f472b6);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+    box-shadow: 0 0 10px #a970ff;
+}
+
+/* Animations */
+@keyframes neonPulse {
+    0% {
+        box-shadow: 0 0 5px #a970ff,
+                    0 0 10px #a970ff,
+                    0 0 15px #a970ff;
+    }
+    50% {
+        box-shadow: 0 0 10px #a970ff,
+                    0 0 20px #a970ff,
+                    0 0 30px #a970ff;
+    }
+    100% {
+        box-shadow: 0 0 5px #a970ff,
+                    0 0 10px #a970ff,
+                    0 0 15px #a970ff;
+    }
+}
+
+@keyframes textGlow {
+    0% {
+        text-shadow: 0 0 5px #a970ff,
+                     0 0 10px #a970ff;
+    }
+    50% {
+        text-shadow: 0 0 10px #a970ff,
+                     0 0 20px #a970ff;
+    }
+    100% {
+        text-shadow: 0 0 5px #a970ff,
+                     0 0 10px #a970ff;
+    }
+}
+
+/* FAQ Section */
+.faq-section {
+    margin-top: 3rem;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.faq-item {
+    background: rgba(26, 26, 26, 0.8);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    border: 1px solid rgba(169, 112, 255, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(169, 112, 255, 0.3);
+}
+
+.faq-item h3 {
+    color: #a970ff;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-shadow: 0 0 10px rgba(169, 112, 255, 0.5);
+}
+
+.faq-item p {
+    color: #ccc;
+    line-height: 1.5;
+} 

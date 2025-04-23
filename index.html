@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Achievement Tracker</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <header>
+    <h1 class="logo">GameTrack<span>AI</span></h1>
+    <button class="theme-toggle">🌙</button>
+  </header>
+
+  <main class="hero">
+    <h2>Your Ultimate Game Achievement Tracker!</h2>
+    <p>Track and showcase your progress in your favorite games. Stay motivated and unlock every achievement!</p>
+<!-- Your existing button (do NOT change styles) -->
+<a  href="chatbot.html"><button class="cta">Start Tracking</button></a>
+
+
+<!-- <div class="assistant" id="assistant">
+  <div class="chat-box" id="chatBox">
+    <p class="ai">Hi! I'm your achievement assistant 🤖<br>Tell me your favorite game and I'll help you track its achievements!</p>
+  </div>
+  <input type="text" id="userInput" placeholder="Type your game..." />
+  <button onclick="sendMessage()">Send</button>
+</div> -->
+  </main>
+
+  <section class="achievements">
+    <div class="achievement-card" id="firstBloodCard">
+      <div class="icon">🎯</div>
+      <h3>Enter Your BGMI ID</h3>
+      <div class="stats-container">
+        <div class="stat-item">
+          <div class="stat-value">0</div>
+          <div class="stat-label">Kills</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">0</div>
+          <div class="stat-label">Wins</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">0</div>
+          <div class="stat-label">Headshots</div>
+        </div>
+      </div>
+      <div class="progress-container">
+        <div class="progress-bar" style="width: 0%"></div>
+      </div>
+      <p class="achievement-desc">Track your BGMI achievements and stats in real-time!</p>
+    </div>
+    <!-- <div class="achievement-card">
+      <div class="icon">🔥</div>
+      <h3>Monster Kill</h3>
+    </div> -->
+    <div class="achievement-card" onclick="window.location.href='userdashboard.html'">
+      <div class="icon">🏆</div>
+      <h3>Track Your Achievements</h3>
+      <div class="stats-container">
+        <div class="stat-item">
+          <div class="stat-value">0</div>
+          <div class="stat-label">Achievements</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">0%</div>
+          <div class="stat-label">Completion</div>
+        </div>
+      </div>
+      <div class="progress-container">
+        <div class="progress-bar" style="width: 0%"></div>
+      </div>
+      <p class="achievement-desc">Monitor your progress and unlock new achievements!</p>
+    </div>
+  </section>
+
+  <!-- BGMI ID Modal -->
+  <div class="modal-overlay" id="bgmiModal">
+    <div class="modal-content">
+      <h2>Enter Your BGMI ID</h2>
+      <p class="modal-desc">Enter your BGMI ID to start tracking your achievements and stats!</p>
+      <input type="text" id="bgmiId" placeholder="Enter your BGMI ID" />
+      <div class="stats-container">
+        <div class="stat-item">
+          <div class="stat-value">0</div>
+          <div class="stat-label">Current Rank</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">0</div>
+          <div class="stat-label">Matches Played</div>
+        </div>
+      </div>
+      <div class="modal-buttons">
+        <button onclick="submitBgmiId()">Submit</button>
+        <button onclick="closeModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
